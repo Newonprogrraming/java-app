@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <HBox prefHeight="579.0" prefWidth="561.0">
+            <children>
+                <VBox prefHeight="579.0" prefWidth="125.0" style="-fx-background-color: #fffeee;">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <children>
+                        <Button fx:id="task1btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 1" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Написать регулярное выражение, определяющее является ли данная строка строкой &quot;abcdefghijklmnopqrstuv18340&quot; или нет" />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task2btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 2" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Написать регулярное выражение, определяющее является ли данная строка GUID с или без скобок. Где GUID это строчка, состоящая из 8, 4, 4, 4, 12 шестнадцатеричных цифр разделенных тире.">
+                                </Tooltip>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task3btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 3" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Написать регулярное выражение, определяющее является ли заданная строка правильным MAC-адресом." />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task4btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 4" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Написать регулярное выражение, определяющее является ли данная строчка валидным URL адресом." />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task5btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 5" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Написать регулярное выражение, определяющее является ли данная строчка шестнадцатиричным идентификатором цвета в HTML." />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task6btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 6" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Написать регулярное выражение, определяющее является ли данная строчка датой в формате dd/mm/yyyy. Начиная с 1600 года до 9999 года." />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task7btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 7" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Написать регулярное выражение, определяющее является ли данная строчка валидным E-mail адресом согласно RFC под номером 2822." />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task8btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 8" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Составить регулярное выражение, определяющее является ли заданная строка IP адресом, записанным в десятичном виде." />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task9btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 9" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Проверить, надежно ли составлен пароль. Пароль считается надежным, если он состоит из 8 или более символов" />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task10btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 10" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Проверить является ли заданная строка шестизначным числом, записанным в десятичной системе счисления без нулей в старших разрядах." />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task11btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 11" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Есть текст со списками цен. Извлечь из него цены в USD, RUR, EU." />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task12btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 12" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Проверить существуют ли в тексте цифры, за которыми не стоит «+»." />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="task13btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #0077ff; -fx-background-radius: 8;" text="Задание 13" textFill="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+                            </VBox.margin>
+                            <tooltip>
+                                <Tooltip text="Создать запрос для вывода только правильно написанных выражений со скобками (количество открытых и закрытых скобок должно быть одинаково)." />
+                            </tooltip>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox prefHeight="579.0" prefWidth="437.0">
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="405.0" text="Напишите текст для входа в программу">
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="textinput" prefHeight="32.0" prefWidth="369.0" promptText="Введите текст" style="-fx-background-color: #fffeee; -fx-background-radius: 8; -fx-border-radius: 8;">
+                            <VBox.margin>
+                                <Insets left="15.0" right="15.0" />
+                            </VBox.margin>
+                            <effect>
+                                <DropShadow height="15.14" radius="6.3375" width="12.21">
+                                    <color>
+                                        <Color red="0.3898635506629944" green="0.4038986265659332" blue="0.42105263471603394" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                        </TextField>
+                        <Label fx:id="resualtlabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="43.0" prefWidth="425.0" text="Результат:" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>
